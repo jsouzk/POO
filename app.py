@@ -76,8 +76,9 @@ if st.button("Calcular"):
     imc = pessoa.calcular_imc()
     classificacao_imc = pessoa.classificar_imc()
     
-    st.write(f"Nome: {pessoa.nome}")
-    st.write(f"Idade: {idade} anos")
-    st.write(f"IMC: {imc:.2f}")
-    st.write(f"Classificação do IMC: {classificacao_imc}")
-    
+    st.success(f"Nome: {pessoa.nome}")
+    st.success(f"Idade: {idade} anos")
+    st.success(f"IMC: {imc:.2f}")
+    st.success(f"Classificação do IMC: {classificacao_imc}")
+else:
+    st.error("Por favor, preencha os dados e clique em 'Calcular'.")
